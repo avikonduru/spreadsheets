@@ -11,8 +11,7 @@ app.use(express.json({ extended: false }));
 app.get('/', (req, res) => res.send('API Running'));
 
 //Routes
-// app.use('/api/notes', require('./routes/notes'));
-// app.use('/api/folder', require('./routes/folder'));
+app.use('/api/query', require('./routes/query'));
 
 const PORT = process.env.PORT || 5000;
 
